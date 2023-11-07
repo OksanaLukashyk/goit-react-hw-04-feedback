@@ -1,0 +1,16 @@
+.statsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff, 0 0 15px #0fa,
+    0 0 30px rgba(0, 255, 110, 0.718);
+}
+
+.statsListItem {
+  font-size: 18px;
+  font-style: italic;
+}

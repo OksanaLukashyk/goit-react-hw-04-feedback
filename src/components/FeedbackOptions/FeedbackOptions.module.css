@@ -1,0 +1,41 @@
+.btnList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnFeedBack {
+  padding: 10px;
+  width: 200px;
+  height: 40px;
+  border-color: transparent;
+  outline: none;
+  border-radius: 40px;
+  background: transparent;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: seashell;
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff, 0 0 15px #0fa,
+    0 0 30px rgba(0, 255, 110, 0.718);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btnFeedBack:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff, 0 0 15px #0fa,
+    0 0 30px rgba(0, 255, 110, 0.718), 0 0 45px rgba(0, 255, 110, 0.718);
+  animation: pulsate-light 2s infinite alternate;
+}
+
+@keyframes pulsate-light {
+  100% {
+    box-shadow: 0 0 4px #fff, 0 0 9px #fff, 0 0 10px #fff, 0 0 25px #0fa,
+      0 0 45px rgba(0, 255, 110, 0.718), 0 0 55px rgba(0, 255, 110, 0.718);
+  }
+
+  0% {
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 10px #0fa,
+      0 0 20px rgba(0, 255, 110, 0.718), 0 0 35px rgba(0, 255, 110, 0.718);
+  }
+}
